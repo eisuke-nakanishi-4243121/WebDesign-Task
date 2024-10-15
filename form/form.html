@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入力フォーム</title>
+
+    <link rel="stylesheet" href="form-style.css">
+
+</head>
+
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- getはURLにデータが出てしまう
+        個人情報を入れるときはpostをつかう -->
+
+    <h1>会員登録</h1>
+<p>以下の情報を入力し、確定ボタンを押してください。</p>
+<div>
+    <fieldset>
+            <legend>お客様情報</legend>
+            <p>性　　　　　　　：<input type="text" name="last_name"><br></p>
+
+            <p>名　　　　　　　：<input type="text" name="first_name"><br></p>
+
+            <p>住所　　　　　　：<input type="text" name="address"><br></p>
+
+            <p>メールアドレス　：<input type="email" name="email"><br></p>
+
+            <p>電話番号　　　　：<input type="tel" name="tel"><br></p>
+
+            <p>生年月日　　　　：<input type="date" name="birthday" value="1990-01-01"></p>
+
+            <p>年齢　　　　　　：<input type="namber" name="age" min="0" max="150">　歳</p>
+
+            <p>性別：<label><input type="radio" name="gender" value="0">　男</label>
+                <label><input type="radio" name="gender" value="1">　女</label>
+                <label><input type="radio" name="gender" value="2">　その他</label><br>
+            </p>
+        </fieldset>
+
+        </div>
+
+        <fieldset>
+            <legend>パスワード</legend>
+            <p>英数字8文字以上で入力してください。<br><input type="password" name="password"><br></p>
+
+            <p>確認のためもう一度入力してください。<br><input type="password" name="password_confirm"><br></p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>希望メールマガジン</legend>
+            <p><label><input type="checkbox" name="magazine" value="1">　IT</label>
+                <label><input type="checkbox" name="magazine" value="2">　営業</label>
+                <label><input type="checkbox" name="magazine" value="3">　接客</label>
+                <label><input type="checkbox" name="magazine" value="4">　医療</label><br>
+            </p>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>利用規約</legend>
+            <p><a href="terms.html" target="_blank">会員規約を確認する。</a></p>
+            <p><label><input type="checkbox" name="terms" value="agree">　規約に同意する</label>
+        </fieldset>
+
+        <p>
+            <button type="reset">クリア</button>
+            <button type="submit">確認</button>
+        </p>
+
+
+
+
+
+    </form>
+</body>
+
+</html>
