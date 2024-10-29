@@ -31,7 +31,7 @@ h2 {
     flex-basis: 25%;
     border-radius: 10px;
     box-sizing: border-box;
-    background-image: url(/img/images.jpeg);
+    background-image: url(img/garfleld.jpg);
     background-size: cover;
     background-blend-mode: overlay;
 }
